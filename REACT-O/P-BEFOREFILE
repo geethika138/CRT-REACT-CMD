@@ -1,0 +1,58 @@
+PS C:\659> npx create-react-app my-app --legacy-peer-deps
+
+Creating a new React app in C:\659\my-app.
+
+Installing packages. This might take a couple of minutes.
+Installing react, react-dom, and react-scripts with cra-template...
+
+
+added 1321 packages in 4m
+
+265 packages are looking for funding
+  run `npm fund` for details
+Git repo not initialized Error: Command failed: git --version
+    at genericNodeError (node:internal/errors:984:15)
+    at wrappedFn (node:internal/errors:538:14)
+    at checkExecSyncError (node:child_process:890:11)
+    at execSync (node:child_process:962:15)
+    at tryGitInit (C:\659\my-app\node_modules\react-scripts\scripts\init.js:46:5)
+    at module.exports (C:\659\my-app\node_modules\react-scripts\scripts\init.js:276:7)
+    at [eval]:3:14
+    at runScriptInThisContext (node:internal/vm:209:10)
+    at node:internal/process/execution:109:14
+    at [eval]-wrapper:6:24 {
+  status: 1,
+  signal: null,
+  output: [ null, null, null ],
+  pid: 11532,
+  stdout: null,
+  stderr: null
+}
+
+Installing template dependencies using npm...
+npm error code ERESOLVE
+npm error ERESOLVE unable to resolve dependency tree
+npm error
+npm error While resolving: my-app@0.1.0
+npm error Found: react@19.0.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+npm error
+npm error Could not resolve dependency:
+npm error peer react@"^18.0.0" from @testing-library/react@13.4.0
+npm error node_modules/@testing-library/react
+npm error   @testing-library/react@"^13.0.0" from the root project
+npm error
+npm error Fix the upstream dependency conflict, or retry
+npm error this command with --force or --legacy-peer-deps
+npm error to accept an incorrect (and potentially broken) dependency resolution.
+npm error
+npm error
+npm error For a full report see:
+npm error C:\Users\PPS LAB\AppData\Local\npm-cache\_logs\2024-12-13T10_15_02_007Z-eresolve-report.txt
+npm error A complete log of this run can be found in: C:\Users\PPS LAB\AppData\Local\npm-cache\_logs\2024-12-13T10_15_02_007Z-debug-0.log
+`npm install --no-audit --save @testing-library/jest-dom@^5.14.1 @testing-library/react@^13.0.0 @testing-library/user-event@^13.2.1 web-vitals@^2.1.0` failed
+PS C:\659> 
+PS C:\659> cd my-app
+PS C:\659\my-app> code .
+PS C:\659\my-app> 

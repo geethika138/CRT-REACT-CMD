@@ -1,0 +1,142 @@
+Microsoft Windows [Version 10.0.22631.4602]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\PPS LAB>npm install --legacy-peer-deps
+
+up to date, audited 2 packages in 7s
+
+found 0 vulnerabilities
+
+C:\Users\PPS LAB>npx create-react-app my-app --legacy-peer-deps
+The directory my-app contains files that could conflict:
+
+  node_modules/
+  package-lock.json
+  package.json
+  public/
+  src/
+
+Either try using a new directory name, or remove the files listed above.
+
+C:\Users\PPS LAB>npx create-react-app my-new-app --legacy-peer-deps
+
+Creating a new React app in C:\Users\PPS LAB\my-new-app.
+
+Installing packages. This might take a couple of minutes.
+Installing react, react-dom, and react-scripts with cra-template...
+
+
+added 1321 packages in 3m
+
+265 packages are looking for funding
+  run `npm fund` for details
+
+Initialized a git repository.
+
+Installing template dependencies using npm...
+npm error code ERESOLVE
+npm error ERESOLVE unable to resolve dependency tree
+npm error
+npm error While resolving: my-new-app@0.1.0
+npm error Found: react@19.0.0
+npm error node_modules/react
+npm error   react@"^19.0.0" from the root project
+npm error
+npm error Could not resolve dependency:
+npm error peer react@"^18.0.0" from @testing-library/react@13.4.0
+npm error node_modules/@testing-library/react
+npm error   @testing-library/react@"^13.0.0" from the root project
+npm error
+npm error Fix the upstream dependency conflict, or retry
+npm error this command with --force or --legacy-peer-deps
+npm error to accept an incorrect (and potentially broken) dependency resolution.
+npm error
+npm error
+npm error For a full report see:
+npm error C:\Users\PPS LAB\AppData\Local\npm-cache\_logs\2024-12-13T08_55_12_559Z-eresolve-report.txt
+npm error A complete log of this run can be found in: C:\Users\PPS LAB\AppData\Local\npm-cache\_logs\2024-12-13T08_55_12_559Z-debug-0.log
+`npm install --no-audit --save @testing-library/jest-dom@^5.14.1 @testing-library/react@^13.0.0 @testing-library/user-event@^13.2.1 web-vitals@^2.1.0` failed
+
+C:\Users\PPS LAB>cd my-new-app
+
+C:\Users\PPS LAB\my-new-app>npm install --legacy-peer-deps
+
+removed 1 package, and audited 1321 packages in 3s
+
+265 packages are looking for funding
+  run `npm fund` for details
+
+8 vulnerabilities (2 moderate, 6 high)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+C:\Users\PPS LAB\my-new-app>npm start
+
+> my-new-app@0.1.0 start
+> react-scripts start
+
+(node:9960) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:9960) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+
+One of your dependencies, babel-preset-react-app, is importing the
+"@babel/plugin-proposal-private-property-in-object" package without
+declaring it in its dependencies. This is currently working because
+"@babel/plugin-proposal-private-property-in-object" is already in your
+node_modules folder for unrelated reasons, but it may break at any time.
+
+babel-preset-react-app is part of the create-react-app project, which
+is not maintianed anymore. It is thus unlikely that this bug will
+ever be fixed. Add "@babel/plugin-proposal-private-property-in-object" to
+your devDependencies to work around this error. This will make this message
+go away.
+Failed to compile.
+
+Module not found: Error: Can't resolve 'web-vitals' in 'C:\Users\PPS LAB\my-new-app\src'
+ERROR in ./src/reportWebVitals.js 5:4-24
+Module not found: Error: Can't resolve 'web-vitals' in 'C:\Users\PPS LAB\my-new-app\src'
+
+webpack compiled with 1 error
+Terminate batch job (Y/N)? Y
+
+C:\Users\PPS LAB\my-new-app>npm install web-vitals --legacy-peer-deps
+
+added 1 package, and audited 1322 packages in 3s
+
+265 packages are looking for funding
+  run `npm fund` for details
+
+8 vulnerabilities (2 moderate, 6 high)
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+C:\Users\PPS LAB\my-new-app>npm start
+
+> my-new-app@0.1.0 start
+> react-scripts start
+
+(node:7148) [DEP_WEBPACK_DEV_SERVER_ON_AFTER_SETUP_MIDDLEWARE] DeprecationWarning: 'onAfterSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:7148) [DEP_WEBPACK_DEV_SERVER_ON_BEFORE_SETUP_MIDDLEWARE] DeprecationWarning: 'onBeforeSetupMiddleware' option is deprecated. Please use the 'setupMiddlewares' option.
+Starting the development server...
+Compiled successfully!
+
+You can now view my-new-app in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.23.41:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+Terminate batch job (Y/N)? Y
+
+C:\Users\PPS LAB\my-new-app>

@@ -1,0 +1,42 @@
+Starting the development server...
+Failed to compile.
+
+Module not found: Error: Can't resolve 'web-vitals' in 'C:\659\my-app\src'
+ERROR in ./src/reportWebVitals.js 5:4-24
+Module not found: Error: Can't resolve 'web-vitals' in 'C:\659\my-app\src'
+
+webpack compiled with 1 error
+Terminate batch job (Y/N)? y
+PS C:\659\my-app> npm install web-vitals --legacy-peer-deps
+
+added 1 package, removed 1 package, and audited 1322 packages in 15s
+
+265 packages are looking for funding
+  run `npm fund` for details
+
+8 vulnerabilities (2 moderate, 6 high)
+
+To address all issues (including breaking changes), run:
+Compiled successfully!
+
+You can now view my-app in the browser.
+
+  Local:            http://localhost:3000
+  On Your Network:  http://192.168.23.41:3000
+
+Note that the development build is not optimized.
+To create a production build, use npm run build.
+
+webpack compiled successfully
+One of your dependencies, babel-preset-react-app, is importing the
+"@babel/plugin-proposal-private-property-in-object" package without
+declaring it in its dependencies. This is currently working because
+"@babel/plugin-proposal-private-property-in-object" is already in your
+node_modules folder for unrelated reasons, but it may break at any time.
+
+babel-preset-react-app is part of the create-react-app project, which
+is not maintianed anymore. It is thus unlikely that this bug will
+ever be fixed. Add "@babel/plugin-proposal-private-property-in-object" to
+your devDependencies to work around this error. This will make this message
+go away.
+
